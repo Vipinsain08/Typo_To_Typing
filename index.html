@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="backgroudManage.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <img src="images\typo  transparent 6.png" class="nav-image">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="typingtest.html">Practice</a></li>
+                <li><a href="practiceGame.html">Typing Game</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div>
+        <video autoplay loop muted id="video-bg">
+            <source src="background_content\background_video_modified.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="text_content">
+            <h1>Test Your Typing Skills</h1>
+            <button class="btn_main" type="button">
+                <strong>S T A R T</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+          </div>
+    </div>
+
+</body>
+<script>
+   const stbtn =document.querySelector('.btn_main');
+  stbtn.addEventListener('click',function(){
+    window.open('typingtest.html', '_self');
+  })
+</script>
+</html>
